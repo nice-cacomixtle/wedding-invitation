@@ -1,0 +1,61 @@
+<div #welcomeDiv class="welcome-div invisible">
+    <div #itemList class="item-list">
+        <h1 class="gold-text">Nuesta boda<br>Christian & Marlen</h1>
+        <img src="/images/pareja-caricatura.png" alt="Love Image" class="celebration celebration-heart">
+        <!-- <h1>Texto 1<br>Persona1 & Persona2</h1> -->
+    </div>
+    <div #itemList class="item-list">
+        <p>"Así que ya no son dos, sino uno solo. Por tanto, lo que Dios ha unido, que no lo separe el hombre"<br>Mateo 19:6</p>
+        <!-- <p>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br>Someone 19:6</p>  -->
+    </div>
+    <div #itemList class="item-list">
+        <h1 class="gold-text">Mi bauitizo<br>Dante Casado Martínez</h1>
+        <img src="/images/bautizo.png" alt="Love Image" class="celebration celebration-baby">
+    </div>
+    <div #itemList class="item-list">
+        <p>Es un gusto y una dicha que junto con nuestros padres, tenemos el honor de invitarles a la celebración de nuestro sagrado matrimonio y bautizo de nuestro hijo.</p>
+        <!-- <p>It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.</p> -->
+    </div> 
+    <div #itemList class="item-list">
+        <h1>Ceremonia</h1>
+        <h2>Fecha</h2>
+        <p>{{partyTimeFormatDate}}<br>{{partyTimeFormatHours}} hrs</p>
+        <h2>Ubicación</h2>
+        <p>Parroquia de San Lorenzo Toxico. Manznana 1, San Lorenzo Toxico, Ixtlahuaca, Estado de México. C.P.: 50780</p>
+        <a class="btn btn-gold" href="://maps.app.goo.gl/8dLDbqVa7qwgPAk76">Ver en Mapa</a>
+        <!-- <h1>Text 1</h1>
+        <h2>Date</h2>
+        <p>19-12-2026<br>13:00 hrs</p>
+        <h2>Location</h2>
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <button class="btn" (click)="openWindow('https://maps.app.goo.gl/8dLDbqVa7qwgPAk76')">See location</button> -->
+    </div>
+    <div #itemList class="item-list">
+        <h1>Fiesta</h1>
+        <h2>Ubicación</h2>
+        <p>Salon ubicado a un lado de la delegación municipal,Manznana 1, San Lorenzo Toxico, Ixtlahuaca, Estado de México. C.P.: 50780, a 450m de la ṕarroquia</p>
+        <a class="btn btn-gold" href="https://maps.app.goo.gl/8dLDbqVa7qwgPAk76">Ver en Mapa</a>
+        <!-- <h1>Text 1</h1>
+        <h2>Location</h2>
+        <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+        <button class="btn" (click)="openWindow('https://maps.app.goo.gl/8dLDbqVa7qwgPAk76')">See location</button> -->
+    </div>
+    <div #itemList class="item-list">
+        <h1>Codigo de vestimenta</h1>
+        <img src="/images/vestimenta.jpeg" alt="boda" class="dress-style">
+        <!-- <h1>Image dress</h1>
+        <img src="https://i.ytimg.com/vi/Ck0jtsI1gbQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB2XrKK7XgZWYQCuXPT3f4tjhCQOw" alt="boda" width="100%">  -->
+    </div>
+    <div #itemList class="item-list">
+        <h1>Estamos listos!</h1>
+        <!-- <a routerLink="/register" class="btn btn-gold">Confirma tu asistencia</a> -->
+        <div class="">
+            <app-countdown [targetDate]="partyTime"></app-countdown>
+        </div>
+        <!-- <h1>Register button</h1>
+        <a routerLink="/register" class="btn">Register</a>
+        <div class="">
+            <app-countdown targetDate="2026-12-31T23:59:59"></app-countdown>
+        </div> -->
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div class="middle">
+    
+    <form #mainForm="ngForm" [formGroup]="invitedForm" (ngSubmit)="onSubmit()">
+        <h3>Necesitamos algunos datos</h3>
+        <div class="row">
+             <div class="labelInput">
+                <span>Nombre:</span>
+            </div>
+            <div class="valueInput">
+                <input class="formInput" type="text" formControlName="name" placeholder="Enter your name">
+            </div>
+        </div>
+        <div class="row">
+             <div class="labelInput">
+                <span>Primer apellido:</span>
+            </div>
+            <div class="valueInput">
+                <input class="formInput" type="text" formControlName="firstSurname" placeholder="Enter your first surname">
+            </div>
+        </div>
+        <div class="row">
+             <div class="labelInput">
+                <span>Segundo apellido:</span>
+            </div>
+            <div class="valueInput">
+                <input class="formInput" type="text" formControlName="secondSurname" placeholder="Enter your second surname">
+            </div>
+        </div>
+        <div class="row">
+             <div class="labelInput">
+                <span>Correo electronico:</span>
+            </div>
+            <div class="valueInput">
+                <input class="formInput" type="email" formControlName="email" placeholder="Enter your email">
+            </div>
+        </div>
+        <button class="btn btn-gold" type="submit" [disabled]="invitedForm.invalid">Confirmar</button>
+    </form> 
+</div>
+<a type="button" class="btn btn-back icon-text" href="/welcome">
+    <ng-icon name="ionArrowBack" size="30px"/>
+    <span>Regresar</span>
+</a>

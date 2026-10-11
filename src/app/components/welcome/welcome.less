@@ -1,0 +1,65 @@
+.welcome-div {
+    overflow-y: hidden;
+}
+
+.item-list {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.invisible {
+    opacity: 0;
+    transition: opacity 5s ease;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 5s ease;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: none;
+}
+
+p {
+    font-size: 25px;
+}
+
+.gold-text {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #bf953f, #fceb2b, #B38728, #fbee5c, #AA771C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.dress-style {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.celebration {
+    width: 50%;
+    aspect-ratio: 1;
+    &-heart{
+        object-fit: cover;
+        clip-path: shape(from 50% 91%,
+            line to 90% 50%,
+            arc to 50% 9% of 1%,
+            arc to 10% 50% of 1%);
+    }&-baby{
+        border-radius: 10px;
+    }
+}

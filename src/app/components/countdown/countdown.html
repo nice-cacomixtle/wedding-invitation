@@ -1,0 +1,23 @@
+<div class="countdown">
+    <div class="countdown-title">
+        <h2>Faltan:</h2>
+    </div>
+    <div class="countdown-container" *ngIf="timeData">
+        <div class="time-box">
+            <span class="number">{{ timeData.days }}</span>
+            <span class="label">Días</span>
+        </div>
+        <div class="time-box">
+            <span class="number">{{ timeData.hours }}</span>
+            <span class="label">Horas</span>
+        </div>
+        <div class="time-box">
+            <span class="number">{{ timeData.minutes }}</span>
+            <span class="label">Minutos</span>
+        </div>
+        <div class="time-box">
+            <span class="number">{{ timeData.seconds }}</span>
+            <span class="label">Segundos</span>
+        </div>
+    </div>
+</div>
